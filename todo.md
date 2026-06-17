@@ -28,22 +28,22 @@
 - [ ] Passenger profile screen
 
 ## Phase 4: Maps & Navigation
-- [ ] Integração com mapas gratuitos (OpenStreetMap + Leaflet ou Mapbox Free)
-- [ ] Real-time location tracking (GPS)
-- [ ] Route calculation
+- [x] Integração com mapas gratuitos (OpenStreetMap + Nominatim + OSRM)
+- [x] Real-time location tracking (GPS)
+- [x] Route calculation
 - [ ] Turn-by-turn navigation
 - [ ] Marker clustering para múltiplas viagens
-- [ ] Map gestures (pinch, zoom, pan)
+- [x] Map gestures (pinch, zoom, pan) - basic implementation
 
 ## Phase 5: Real-Time Communication
 - [ ] WebSocket setup para real-time updates
 - [ ] Driver location updates (real-time)
 - [ ] Ride status updates
 - [ ] In-ride chat (Motorista ↔ Passageiro)
-- [ ] Notification system
+- [x] Notification system (Expo Notifications)
 
 ## Phase 6: Push Notifications
-- [ ] Expo Notifications setup
+- [x] Expo Notifications setup
 - [ ] APNs configuration (iOS)
 - [ ] FCM configuration (Android)
 - [ ] Ride request notifications
@@ -53,7 +53,7 @@
 ## Phase 7: Payments & Wallet
 - [ ] Wallet screen
 - [ ] Payment method management
-- [ ] Ride pricing calculation
+- [x] Ride pricing calculation (via maps-service)
 - [ ] Payment processing
 - [ ] Transaction history
 
@@ -63,7 +63,16 @@
 - [ ] Passenger rating system
 - [ ] Review history
 
-## Phase 9: SOS & Safety
+## Phase 9: UI Components & Polish
+- [x] Interactive map component
+- [x] Bottom sheet component
+- [ ] Ride card component
+- [ ] Driver card component
+- [ ] Rating component
+- [ ] Loading states
+- [ ] Error handling
+
+## Phase 10: SOS & Safety
 - [ ] SOS button (emergency)
 - [ ] Emergency contacts
 - [ ] Share ride details with trusted contacts
