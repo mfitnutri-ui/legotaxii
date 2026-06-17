@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegoTaxi — App Nativa Expo</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; background: #0b0d12; color: #f5f7fa; }
+      body { display: flex; align-items: center; justify-content: center; padding: 24px; }
+      .card { max-width: 560px; width: 100%; background: linear-gradient(180deg, #151924 0%, #0f1320 100%); border: 1px solid #1f2535; border-radius: 18px; padding: 32px; box-shadow: 0 24px 80px rgba(0,0,0,.4); }
+      .badge { display: inline-block; background: #ffd84d; color: #1a1300; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+      h1 { margin: 16px 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+      p { color: #9ba4b8; line-height: 1.55; margin: 0 0 14px; }
+      code { background: #1c2233; padding: 2px 8px; border-radius: 6px; font-size: 13px; color: #ffd84d; }
+      ol { color: #c9d1e2; line-height: 1.7; padding-left: 20px; }
+      .footer { margin-top: 20px; font-size: 12px; color: #6a7388; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <span class="badge">LegoTaxi</span>
+      <h1>App nativa Expo</h1>
+      <p>Este projeto é uma <strong>app móvel React Native (Expo)</strong>. O preview do Lovable só consegue mostrar apps web, por isso aqui aparece esta página em vez da app.</p>
+      <p>Para testares a app a sério:</p>
+      <ol>
+        <li>Instala <strong>Expo Go</strong> no telemóvel.</li>
+        <li>Clona o repositório e corre <code>pnpm install</code>.</li>
+        <li>Inicia com <code>pnpm dev:metro</code> e lê o QR code.</li>
+      </ol>
+      <p class="footer">Sandbox saudável · porta 8080 · placeholder de preview</p>
+    </main>
+  </body>
+</html>
