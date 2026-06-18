@@ -1,21 +1,29 @@
 {
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": false,
-    "noEmit": true,
+    "strict": true,
+    "types": [
+      "node",
+      "nativewind/types"
+    ],
     "paths": {
-      "@/*": ["./*"],
-      "@shared/*": ["./shared/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ]
     }
   },
-  "include": ["preview-web/**/*.ts", "preview-web/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "app", "components", "server", "lib", "hooks", "shared", "src"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
